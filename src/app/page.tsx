@@ -12,7 +12,18 @@ export default async function HomePage() {
       <Header />
 
       <section className="grid grid-cols-1 gap-8 mb-16 sm:grid-cols-2 group">
-        <PostCoverImage href="#" src="/images/bryen_0.png" />
+        <PostCoverImage
+          linkProps={{
+            href: '#',
+          }}
+          imageProps={{
+            width: 1200,
+            height: 720,
+            src: '/images/bryen_9.png',
+            alt: 'Alt da imagem',
+            priority: true,
+          }}
+        />
         <div className="flex flex-col gap-4 sm:justify-center">
           <time
             className="text-slate-600 block text-sm/tight"
@@ -21,7 +32,7 @@ export default async function HomePage() {
             20/04/2025 10:00
           </time>
 
-          <PostHeading as="h2" url="#">
+          <PostHeading as="h1" url="#">
             Começando
           </PostHeading>
           <p>

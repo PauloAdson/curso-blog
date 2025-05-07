@@ -2,20 +2,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 type PostCoverImageProps = {
-  href: string;
-  src: string;
+  imageProps: React.ComponentProps<typeof Image>;
+  linkProps: React.ComponentProps<typeof Link>;
 };
 
-export function PostCoverImage({ href, src }: PostCoverImageProps) {
+export function PostCoverImage({ imageProps, linkProps }: PostCoverImageProps) {
   return (
-    <Link className="w-full h-full overflow-hidden rounded-xl" href={href}>
+    <Link
+      {...linkProps}
+      className={`w-full h-full overflow-hidden rounded-xl ${linkProps.className}`}
+    >
       <Image
+        {...imageProps}
         className="w-full h-full object-cover object-center group-hover:scale-105 transition "
-        src={src}
-        width={1200}
-        height={720}
-        alt="Título do post"
-        priority
+        alt={imageProps.alt}
       />
     </Link>
   );
