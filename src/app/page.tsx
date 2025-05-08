@@ -11,7 +11,7 @@ export default async function HomePage() {
     <Container>
       <Header />
 
-      <section className="grid grid-cols-1 gap-8 mb-16 sm:grid-cols-2 group">
+      <section className='grid grid-cols-1 gap-8 mb-16 sm:grid-cols-2 group'>
         <PostCoverImage
           linkProps={{
             href: '#',
@@ -24,15 +24,15 @@ export default async function HomePage() {
             priority: true,
           }}
         />
-        <div className="flex flex-col gap-4 sm:justify-center">
+        <div className='flex flex-col gap-4 sm:justify-center'>
           <time
-            className="text-slate-600 block text-sm/tight"
-            dateTime="2025-04-20"
+            className='text-slate-600 block text-sm/tight'
+            dateTime='2025-04-20'
           >
             20/04/2025 10:00
           </time>
 
-          <PostHeading as="h1" url="#">
+          <PostHeading as='h1' url='#'>
             Começando
           </PostHeading>
           <p>
@@ -47,7 +47,7 @@ export default async function HomePage() {
         <PostsList />
       </Suspense>
       <footer>
-        <p className="text-6xl font-bold text-center py-8">Footer</p>
+        <p className='text-6xl font-bold text-center py-8'>Footer</p>
       </footer>
     </Container>
   );

@@ -21,7 +21,7 @@ export function PostHeading({
 
   return (
     <Tag className={`${headingClassesMap[Tag]} ${commonClasses}`}>
-      <Link className="hover:text-slate-600 transition duration-300" href={url}>
+      <Link className='hover:text-slate-600 transition duration-300' href={url}>
         {children}
       </Link>
     </Tag>

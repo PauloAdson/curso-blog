@@ -9,7 +9,7 @@ const JSON_POSTS_FILE_PATH = resolve(
   'src',
   'db',
   'seed',
-  'posts.json'
+  'posts.json',
 );
 
 const SIMULATE_WAIT_IN_MS = 0;
