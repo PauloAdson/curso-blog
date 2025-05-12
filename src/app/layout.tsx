@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: 'The blog - Este é um blog com Next.js',
     template: '%s | The Blog',
   },
-  description: 'Descrição do blog',
+  description: 'Essa seria a descrição dessa página.',
 };
 
 type RootLayoutProps = {
@@ -19,11 +19,13 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
-    <html lang='pt-BR' className='dark'>
+    <html lang='pt-BR'>
       <body>
         <Container>
           <Header />
+
           {children}
+
           <Footer />
         </Container>
       </body>
